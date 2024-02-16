@@ -126,6 +126,7 @@ C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\Avalonia\ori
 C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\refint\ShoppingCart.dll
 C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\ShoppingCart.dll
 C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\ShoppingCart.pdb
-C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\ShoppingCart.csproj.CopyComplete
 C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\ShoppingCart.genruntimeconfig.cache
 C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\ref\ShoppingCart.dll
+C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\ShoppingCart.sourcelink.json
+C:\Users\prdb\Desktop\Xofei'sProjects\ShoppingCart\obj\Debug\net6.0\Shopping.CB5956BC.Up2Date
