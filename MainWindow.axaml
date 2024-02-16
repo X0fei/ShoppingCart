@@ -20,7 +20,10 @@
 				<ListBox Name="shoppingCart" >
 					<ListBox.ItemTemplate>
 						<DataTemplate>
-							<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductNameSC}"/>
+							<StackPanel>
+								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductNameSC}"/>
+								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductPriceSC}"/>
+							</StackPanel>
 						</DataTemplate>
 					</ListBox.ItemTemplate>
 				</ListBox>
@@ -31,6 +34,7 @@
 			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 				<TextBlock Margin="0 0 0 10" FontSize="18" Text="Добавьте продукт в корзину:"/>
 				<TextBox Margin="0 0 0 10" FontSize="18" Watermark="Название продукта" Name="productName"/>
+				<TextBox Margin="0 0 0 10" FontSize="18" Watermark="Цена продукта" Name="productPrice"/>
 				<Button HorizontalAlignment="Center" BorderThickness="3" CornerRadius="5" Click="ProductAdd">
 					<TextBlock FontSize="18">
 						Добавить

@@ -9,5 +9,6 @@ namespace ShoppingCart
     public class Products
     {
         public string? ProductNameSC { get; set; }
+        public string? ProductPriceSC { get; set; }
     }
 }

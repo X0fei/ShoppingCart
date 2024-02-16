@@ -7,7 +7,7 @@ namespace ShoppingCart
 {
     public partial class MainWindow : Window
     {   
-        private List<Products> products = new List<Products>();
+        private readonly List<Products> products = new();
         public MainWindow()
         {
             InitializeComponent();
@@ -22,11 +22,19 @@ namespace ShoppingCart
                     empty = true;
                 }
             }
-            if (productName.Text != null && productName.Text != "" && empty == false)
+            for (int i = 0; i < productPrice.Text.Length; i++)
+            {
+                if (productPrice.Text[i] == ' ')
+                {
+                    empty = true;
+                }
+            }
+            if (productName.Text != null && productName.Text != "" && productPrice.Text != null && productPrice.Text != "" && empty == false)
             {
                 products.Add(new Products()
                 {
-                    ProductNameSC = productName.Text
+                    ProductNameSC = productName.Text,
+                    ProductPriceSC = productPrice.Text
                 });
                 shoppingCart.ItemsSource = products.ToList();
             }
