@@ -37,6 +37,8 @@ namespace ShoppingCart
                     ProductPriceSC = productPrice.Text
                 });
                 shoppingCart.ItemsSource = products.ToList();
+                productName.Text = null;
+                productPrice.Text = null;
             }
         }
     }
