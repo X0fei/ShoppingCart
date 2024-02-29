@@ -41,5 +41,14 @@ namespace ShoppingCart
                 productPrice.Text = null;
             }
         }
+        public void ToSelectedProducts(object source, RoutedEventArgs args)
+        {
+            if (shoppingCart.SelectedItems != null)
+            {
+                SelectedProducts selectedProducts = new SelectedProducts(products);
+                selectedProducts.Show();
+                Close();
+            }
+        }
     }
 }
