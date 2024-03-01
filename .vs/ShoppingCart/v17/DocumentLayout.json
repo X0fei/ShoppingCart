@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\selectedproducts.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:selectedproducts.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\cart.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:cart.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\selectedproducts.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:selectedproducts.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\cart.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:cart.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,11 +35,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SelectedProducts.axaml",
-              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\SelectedProducts.axaml",
-              "RelativeDocumentMoniker": "SelectedProducts.axaml",
-              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\SelectedProducts.axaml",
-              "RelativeToolTip": "SelectedProducts.axaml",
+              "Title": "Cart.axaml",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Cart.axaml",
+              "RelativeDocumentMoniker": "Cart.axaml",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Cart.axaml",
+              "RelativeToolTip": "Cart.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-02-29T11:13:28.523Z",
               "EditorCaption": ""
@@ -47,12 +47,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SelectedProducts.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\SelectedProducts.axaml.cs",
-              "RelativeDocumentMoniker": "SelectedProducts.axaml.cs",
-              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\SelectedProducts.axaml.cs",
-              "RelativeToolTip": "SelectedProducts.axaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Title": "Cart.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Cart.axaml.cs",
+              "RelativeDocumentMoniker": "Cart.axaml.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Cart.axaml.cs",
+              "RelativeToolTip": "Cart.axaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-29T11:13:27.726Z",
               "EditorCaption": ""
@@ -66,8 +66,8 @@
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
         "Id": "cd392248-f807-4768-8335-3af6bba77724",
-        "Display": 1,
-        "X": -410,
+        "Display": 0,
+        "X": -8,
         "Y": 50,
         "Width": 1548,
         "Height": 786,
@@ -80,7 +80,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\MainWindow.axaml",
               "RelativeDocumentMoniker": "MainWindow.axaml",
@@ -98,14 +98,14 @@
               "RelativeDocumentMoniker": "MainWindow.axaml.cs",
               "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\MainWindow.axaml.cs",
               "RelativeToolTip": "MainWindow.axaml.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAkAAAAwAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwDsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T07:00:29.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Products.cs",
               "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Products.cs",
               "RelativeDocumentMoniker": "Products.cs",

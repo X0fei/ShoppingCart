@@ -20,8 +20,8 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/prdb/Desktop/Xofei'sProjects/ShoppingCart/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/Desktop/Xofei'sProjects/ShoppingCart/MainWindow.axaml]
+[C:/Users/prdb/Desktop/Xofei'sProjects/ShoppingCart/Cart.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/prdb/Desktop/Xofei'sProjects/ShoppingCart/SelectedProducts.axaml]
+[C:/Users/prdb/Desktop/Xofei'sProjects/ShoppingCart/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

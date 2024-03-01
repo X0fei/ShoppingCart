@@ -20,6 +20,8 @@
 
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="SelectedProducts.axaml" />
+    <Compile Update="Cart.axaml.cs">
+      <DependentUpon>Cart.axaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

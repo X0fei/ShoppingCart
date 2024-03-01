@@ -7,10 +7,18 @@ namespace ShoppingCart
 {
     public partial class MainWindow : Window
     {   
-        private readonly List<Products> products = new();
+        private List<Products> products = new();
+        private List<Products> selectedProducts = new();
         public MainWindow()
         {
             InitializeComponent();
+        }
+        public MainWindow(List<Products> products, List<Products> productsInCart)
+        {
+            InitializeComponent();
+            this.products = products;
+            allProducts.ItemsSource = this.products;
+            this.selectedProducts = productsInCart;
         }
         public void ProductAdd(object source, RoutedEventArgs args)
         {
@@ -36,17 +44,21 @@ namespace ShoppingCart
                     ProductNameSC = productName.Text,
                     ProductPriceSC = productPrice.Text
                 });
-                shoppingCart.ItemsSource = products.ToList();
+                allProducts.ItemsSource = products.ToList();
                 productName.Text = null;
                 productPrice.Text = null;
             }
         }
         public void ToSelectedProducts(object source, RoutedEventArgs args)
         {
-            if (shoppingCart.SelectedItems != null)
+            if (allProducts.SelectedItems != null)
             {
-                SelectedProducts selectedProducts = new SelectedProducts(products);
-                selectedProducts.Show();
+                foreach (Products selectedProduct in allProducts.SelectedItems)
+                {
+                    selectedProducts.Add(selectedProduct);
+                }
+                Cart cart = new Cart(products, selectedProducts);
+                cart.Show();
                 Close();
             }
         }
