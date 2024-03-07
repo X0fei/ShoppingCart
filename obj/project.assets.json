@@ -4488,24 +4488,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\prdb\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\class_student\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\prdb\\Desktop\\Xofei'sProjects\\ShoppingCart\\ShoppingCart.csproj",
+      "projectUniqueName": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\ShoppingCart.csproj",
       "projectName": "ShoppingCart",
-      "projectPath": "C:\\Users\\prdb\\Desktop\\Xofei'sProjects\\ShoppingCart\\ShoppingCart.csproj",
-      "packagesPath": "C:\\Users\\prdb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\prdb\\Desktop\\Xofei'sProjects\\ShoppingCart\\obj\\",
+      "projectPath": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\ShoppingCart.csproj",
+      "packagesPath": "C:\\Users\\class_student\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\prdb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\class_student\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4513,8 +4508,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\prdb\\Desktop": {},
-        "C:\\Users\\prdb\\nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4575,7 +4568,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

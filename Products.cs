@@ -8,7 +8,7 @@ namespace ShoppingCart
 {
     public class Products
     {
-        public string ProductNameSC { get; set; }
-        public string ProductPriceSC { get; set; }
+        public string ProductName { get; set; }
+        public string ProductPrice { get; set; }
     }
 }

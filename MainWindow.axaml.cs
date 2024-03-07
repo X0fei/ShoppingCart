@@ -41,8 +41,8 @@ namespace ShoppingCart
             {
                 products.Add(new Products()
                 {
-                    ProductNameSC = productName.Text,
-                    ProductPriceSC = productPrice.Text
+                    ProductName = productName.Text,
+                    ProductPrice = productPrice.Text
                 });
                 allProducts.ItemsSource = products.ToList();
                 productName.Text = null;

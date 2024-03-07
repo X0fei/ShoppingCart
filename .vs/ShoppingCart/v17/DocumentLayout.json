@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\",
+  "WorkspaceRootPath": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\cart.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\class_student\\desktop\\project\\shoppingcart\\cart.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:cart.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\cart.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\class_student\\desktop\\project\\shoppingcart\\cart.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:cart.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\class_student\\desktop\\project\\shoppingcart\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\prdb\\desktop\\xofei\u0027sprojects\\shoppingcart\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\class_student\\desktop\\project\\shoppingcart\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|c:\\users\\class_student\\desktop\\project\\shoppingcart\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F720BB8-C31C-416F-8941-24CFEBDA06AE}|ShoppingCart.csproj|solutionrelative:products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,11 +34,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Cart.axaml",
-              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Cart.axaml",
+              "DocumentMoniker": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\Cart.axaml",
               "RelativeDocumentMoniker": "Cart.axaml",
-              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Cart.axaml",
+              "ToolTip": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\Cart.axaml",
               "RelativeToolTip": "Cart.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-02-29T11:13:28.523Z",
@@ -48,11 +48,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Cart.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Cart.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\Cart.axaml.cs",
               "RelativeDocumentMoniker": "Cart.axaml.cs",
-              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Cart.axaml.cs",
+              "ToolTip": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\Cart.axaml.cs",
               "RelativeToolTip": "Cart.axaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAABHAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAADgvzgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-29T11:13:27.726Z",
               "EditorCaption": ""
@@ -76,15 +76,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\MainWindow.axaml",
               "RelativeDocumentMoniker": "MainWindow.axaml",
-              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\MainWindow.axaml",
               "RelativeToolTip": "MainWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-02-13T07:00:31.264Z",
@@ -92,13 +92,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\MainWindow.axaml.cs",
               "RelativeToolTip": "MainWindow.axaml.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwDsAAAA/AAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowDsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-13T07:00:29.711Z",
               "EditorCaption": ""
@@ -107,11 +107,11 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Products.cs",
+              "DocumentMoniker": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\Products.cs",
               "RelativeDocumentMoniker": "Products.cs",
-              "ToolTip": "C:\\Users\\prdb\\Desktop\\Xofei\u0027sProjects\\ShoppingCart\\Products.cs",
+              "ToolTip": "C:\\Users\\class_student\\Desktop\\project\\ShoppingCart\\Products.cs",
               "RelativeToolTip": "Products.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-15T13:04:53.087Z",
               "EditorCaption": ""

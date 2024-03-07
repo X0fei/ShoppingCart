@@ -21,8 +21,8 @@
 					<ListBox.ItemTemplate>
 						<DataTemplate>
 							<StackPanel>
-								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductNameSC}"/>
-								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductPriceSC}"/>
+								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductName}"/>
+								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductPrice}"/>
 							</StackPanel>
 						</DataTemplate>
 					</ListBox.ItemTemplate>

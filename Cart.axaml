@@ -15,14 +15,17 @@
 		<Border DockPanel.Dock="Right" BorderBrush="DimGray" BorderThickness="2" CornerRadius="5">
 			<StackPanel>
 				<Border BorderBrush="DimGray" BorderThickness="0 0 0 2">
-					<TextBlock  Margin="8"  HorizontalAlignment="Center" FontSize="18" FontWeight="Black">Корзина</TextBlock>
+					<TextBlock  Margin="8" HorizontalAlignment="Center" FontSize="18" FontWeight="Black">Корзина</TextBlock>
 				</Border>
-				<ListBox Name="shoppingCart">
+				<Border BorderBrush="DimGray" BorderThickness="0 0 0 2">
+					<TextBlock  Margin="8" HorizontalAlignment="Center" FontSize="18" Name="result" Text="{Binding Sum}"/>
+				</Border>
+				<ListBox SelectionMode="Multiple,Toggle" Name="shoppingCart">
 					<ListBox.ItemTemplate>
 						<DataTemplate>
 							<StackPanel>
-								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductNameSC}"/>
-								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductPriceSC}"/>
+								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductName}"/>
+								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductPrice}"/>
 							</StackPanel>
 						</DataTemplate>
 					</ListBox.ItemTemplate>
@@ -32,9 +35,14 @@
 
 		<Border Margin="0 0 15 0" BorderBrush="DimGray" BorderThickness="2" CornerRadius="5">
 			<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-				<Button HorizontalAlignment="Center" BorderThickness="3" CornerRadius="5" Click="BackToMainWindow">
+				<Button Margin="5" HorizontalAlignment="Center" BorderThickness="3" CornerRadius="5" Click="BackToMainWindow">
 					<TextBlock FontSize="18">
 						Назад
+					</TextBlock>
+				</Button>
+				<Button Margin="5" HorizontalAlignment="Center" BorderThickness="3" CornerRadius="5" Click="Delete">
+					<TextBlock FontSize="18">
+						Удалить
 					</TextBlock>
 				</Button>
 			</StackPanel>
