@@ -30,7 +30,7 @@ public partial class Cart : Window
         sum = 0;
         foreach (Products product in productsInCart)
         {
-            sum += Convert.ToInt32(product.ProductPrice);
+            sum += Convert.ToInt32(product.Price);
         }
         return sum;
     }
@@ -46,7 +46,7 @@ public partial class Cart : Window
         {
             foreach (Products product in productsInCart)
             {
-                if (selectedProduct.ProductName == product.ProductName && selectedProduct.ProductPrice == product.ProductPrice)
+                if (selectedProduct.Name == product.Name && selectedProduct.Price == product.Price)
                 {
                     productsInCart.Remove(product);
                     break;

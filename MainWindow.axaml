@@ -21,8 +21,8 @@
 					<ListBox.ItemTemplate>
 						<DataTemplate>
 							<StackPanel>
-								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductName}"/>
-								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding ProductPrice}"/>
+								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding Name}"/>
+								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding Price}"/>
 							</StackPanel>
 						</DataTemplate>
 					</ListBox.ItemTemplate>
@@ -45,6 +45,12 @@
 						Перейти на второе окно
 					</TextBlock>
 				</Button>
+				<TextBlock Margin="0 50 0 0" FontSize="11" FontWeight="" HorizontalAlignment="Center">
+					* Название и цена не должны содержать пробелов *
+				</TextBlock>
+				<TextBlock FontSize="11" HorizontalAlignment="Center">
+					* Названия не должны повторяться *
+				</TextBlock>
 			</StackPanel>
 		</Border>
 		

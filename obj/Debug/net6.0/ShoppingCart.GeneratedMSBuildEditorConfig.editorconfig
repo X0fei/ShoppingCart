@@ -13,15 +13,15 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ShoppingCart
-build_property.ProjectDir = C:\Users\class_student\Desktop\project\ShoppingCart\
+build_property.ProjectDir = C:\Users\Ваня\Desktop\ShoppingCart\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/class_student/Desktop/project/ShoppingCart/App.axaml]
+[C:/Users/Ваня/Desktop/ShoppingCart/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/class_student/Desktop/project/ShoppingCart/Cart.axaml]
+[C:/Users/Ваня/Desktop/ShoppingCart/Cart.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/class_student/Desktop/project/ShoppingCart/MainWindow.axaml]
+[C:/Users/Ваня/Desktop/ShoppingCart/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

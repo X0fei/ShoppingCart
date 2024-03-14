@@ -22,27 +22,37 @@ namespace ShoppingCart
         }
         public void ProductAdd(object source, RoutedEventArgs args)
         {
-            bool empty = false;
+            bool error = false;
             for (int i = 0; i < productName.Text.Length; i++)
             {
                 if (productName.Text[i] == ' ')
                 {
-                    empty = true;
+                    error = true;
+                    break;
                 }
             }
             for (int i = 0; i < productPrice.Text.Length; i++)
             {
                 if (productPrice.Text[i] == ' ')
                 {
-                    empty = true;
+                    error = true;
+                    break;
                 }
             }
-            if (productName.Text != null && productName.Text != "" && productPrice.Text != null && productPrice.Text != "" && empty == false)
+            foreach (Products product in products)
+            {
+                if (productName.Text == product.Name)
+                {
+                    error = true;
+                    break;
+                }
+            }
+            if (productName.Text != null && productName.Text != "" && productPrice.Text != null && productPrice.Text != "" && error == false)
             {
                 products.Add(new Products()
                 {
-                    ProductName = productName.Text,
-                    ProductPrice = productPrice.Text
+                    Name = productName.Text,
+                    Price = productPrice.Text
                 });
                 allProducts.ItemsSource = products.ToList();
                 productName.Text = null;
