@@ -52,7 +52,8 @@ namespace ShoppingCart
                 products.Add(new Products()
                 {
                     Name = productName.Text,
-                    Price = productPrice.Text
+                    Price = productPrice.Text,
+                    Count = 1
                 });
                 allProducts.ItemsSource = products.ToList();
                 productName.Text = null;
@@ -67,7 +68,7 @@ namespace ShoppingCart
                 {
                     selectedProducts.Add(selectedProduct);
                 }
-                Cart cart = new Cart(products, selectedProducts);
+                Cart cart = new(products, selectedProducts);
                 cart.Show();
                 Close();
             }

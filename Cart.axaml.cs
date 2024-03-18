@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,7 +13,6 @@ public partial class Cart : Window
 {
     private List<Products> products = new();
     private List<Products> productsInCart = new();
-    private int sum = 0;
     public Cart()
     {
         InitializeComponent();
@@ -27,7 +27,7 @@ public partial class Cart : Window
     }
     public int Sum()
     {
-        sum = 0;
+        int sum = 0;
         foreach (Products product in productsInCart)
         {
             sum += Convert.ToInt32(product.Price);
@@ -36,7 +36,7 @@ public partial class Cart : Window
     }
     public void BackToMainWindow(object source, RoutedEventArgs args)
     {
-        MainWindow mainWindow = new MainWindow(products, productsInCart);
+        MainWindow mainWindow = new(products, productsInCart);
         mainWindow.Show();
         Close();
     }
@@ -48,6 +48,7 @@ public partial class Cart : Window
             {
                 if (selectedProduct.Name == product.Name && selectedProduct.Price == product.Price)
                 {
+                    product.Count = 1;
                     productsInCart.Remove(product);
                     break;
                 }
@@ -55,5 +56,20 @@ public partial class Cart : Window
         }
         shoppingCart.ItemsSource = productsInCart.ToList();
         result.Text = $"Итого: {Sum()}";
+    }
+    public void Increase(object source, RoutedEventArgs args)
+    {
+        Button button = new Button();
+        for (int i = 0; i < productsInCart.Count; i++)
+        {
+            if (button.Tag == i)
+            {
+                productsInCart[i].Count++;
+            }
+        }
+    }
+    public void Decrease(object source, RoutedEventArgs args)
+    {
+
     }
 }
