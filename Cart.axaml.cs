@@ -41,32 +41,24 @@ public partial class Cart : Window
         Close();
     }
     public void Delete(object source, RoutedEventArgs args)
-    {
+          {
         foreach (Products selectedProduct in shoppingCart.SelectedItems)
         {
-            foreach (Products product in productsInCart)
-            {
-                if (selectedProduct.Name == product.Name && selectedProduct.Price == product.Price)
-                {
-                    product.Count = 1;
-                    productsInCart.Remove(product);
-                    break;
-                }
-            }
+            productsInCart.Remove(selectedProduct);
         }
         shoppingCart.ItemsSource = productsInCart.ToList();
         result.Text = $"Итого: {Sum()}";
     }
     public void Increase(object source, RoutedEventArgs args)
     {
-        Button button = new Button();
-        for (int i = 0; i < productsInCart.Count; i++)
-        {
-            if (button.Tag == i)
-            {
-                productsInCart[i].Count++;
-            }
-        }
+        //Button button = new Button();
+        //for (int i = 0; i < productsInCart.Count; i++)
+        //{
+        //    if (button.Tag == i)
+        //    {
+        //        productsInCart[i].Count++;
+        //    }
+        //}
     }
     public void Decrease(object source, RoutedEventArgs args)
     {
