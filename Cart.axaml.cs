@@ -22,6 +22,10 @@ public partial class Cart : Window
         InitializeComponent();
         this.products = products;
         productsInCart = selectedProducts;
+        foreach (Products product in productsInCart)
+        {
+            product.IDInCart = productsInCart.IndexOf(product);
+        }
         shoppingCart.ItemsSource = productsInCart;
         result.Text = $"Итого: {Sum()}";
     }
@@ -30,7 +34,7 @@ public partial class Cart : Window
         int sum = 0;
         foreach (Products product in productsInCart)
         {
-            sum += Convert.ToInt32(product.Price);
+            sum += Convert.ToInt32(product.Price) * product.Count;
         }
         return sum;
     }
@@ -40,28 +44,50 @@ public partial class Cart : Window
         mainWindow.Show();
         Close();
     }
-    public void Delete(object source, RoutedEventArgs args)
-          {
-        foreach (Products selectedProduct in shoppingCart.SelectedItems)
+    public void Delete(object? sender, RoutedEventArgs args)
+    {
+        int id = (int)(sender as Button).Tag;
+        foreach (Products product in productsInCart)
         {
-            productsInCart.Remove(selectedProduct);
+            if (id == product.IDInCart)
+            {
+                productsInCart.RemoveAt(product.IDInCart);
+                break;
+            }
+        }
+        shoppingCart.ItemsSource = productsInCart.ToList();
+        foreach (Products product in productsInCart)
+        {
+            product.IDInCart = productsInCart.IndexOf(product);
+        }
+        result.Text = $"Итого: {Sum()}";
+    }
+    public void Increase(object? sender, RoutedEventArgs args)
+    {
+        int id = (int)(sender as Button).Tag;
+        foreach(Products product in productsInCart)
+        {
+            if (id == product.IDInCart)
+            {
+                product.Count++;
+                break;
+            }
         }
         shoppingCart.ItemsSource = productsInCart.ToList();
         result.Text = $"Итого: {Sum()}";
     }
-    public void Increase(object source, RoutedEventArgs args)
+    public void Decrease(object? sender, RoutedEventArgs args)
     {
-        //Button button = new Button();
-        //for (int i = 0; i < productsInCart.Count; i++)
-        //{
-        //    if (button.Tag == i)
-        //    {
-        //        productsInCart[i].Count++;
-        //    }
-        //}
-    }
-    public void Decrease(object source, RoutedEventArgs args)
-    {
-
+        int id = (int)(sender as Button).Tag;
+        foreach (Products product in productsInCart)
+        {
+            if (id == product.IDInCart && product.Count > 1)
+            {
+                product.Count--;
+                break;
+            }
+        }
+        shoppingCart.ItemsSource = productsInCart.ToList();
+        result.Text = $"Итого: {Sum()}";
     }
 }

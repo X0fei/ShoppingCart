@@ -18,7 +18,7 @@ namespace ShoppingCart
             InitializeComponent();
             this.products = products;
             allProducts.ItemsSource = this.products;
-            this.selectedProducts = productsInCart;
+            selectedProducts = productsInCart;
         }
         public void ProductAdd(object source, RoutedEventArgs args)
         {
@@ -51,6 +51,7 @@ namespace ShoppingCart
             {
                 products.Add(new Products()
                 {
+                    ID = products.Count,
                     Name = productName.Text,
                     Price = productPrice.Text,
                     Count = 1
@@ -64,13 +65,45 @@ namespace ShoppingCart
         {
             if (allProducts.SelectedItems != null)
             {
+                bool error;
                 foreach (Products selectedProduct in allProducts.SelectedItems)
                 {
-                    selectedProducts.Add(selectedProduct);
+                    error = false;
+                    foreach (Products product in selectedProducts)
+                    {
+                        if (selectedProduct.ID == product.ID)
+                        {
+                            error = true;
+                            break;
+                        }
+                    }
+                    if (error == false)
+                    {
+                        selectedProducts.Add(selectedProduct);
+                    }
                 }
                 Cart cart = new(products, selectedProducts);
                 cart.Show();
                 Close();
+            }
+        }
+        public void Delete(object? sender, RoutedEventArgs args)
+        {
+            int id = (int)(sender as Button).Tag;
+            foreach (Products product in products)
+            {
+                if (id == product.ID)
+                {
+                    selectedProducts.RemoveAt(product.IDInCart);
+                    products.RemoveAt(product.ID);
+
+                    break;
+                }
+            }
+            allProducts.ItemsSource = products.ToList();
+            foreach (Products product in products)
+            {
+                product.ID = products.IndexOf(product);
             }
         }
     }

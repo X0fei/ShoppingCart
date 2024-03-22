@@ -10,11 +10,10 @@ namespace ShoppingCart
 {
     public class Products
     {
+        public int ID { get; set; }
+        public int IDInCart { get; set; }
         public string Name { get; set; }
         public string Price { get; set; }
         public int Count { get; set; }
-        public Button Increase { get; set; }
-        public Button Decrease { get; set; }
-        public ICommand ButtonCommand { get; set; }
     }
 }
