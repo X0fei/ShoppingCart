@@ -13,9 +13,9 @@
 	<Border Margin="15" BorderBrush="DimGray" BorderThickness="2" CornerRadius="5">
 		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 			<TextBlock Margin="5" FontSize="18" Text="Изменение продукта:"/>
-			<TextBox Margin="5" FontSize="18" Watermark="Название" Name="productName"/>
-			<TextBox Margin="5" FontSize="18" Watermark="Цена" Name="productPrice"/>
-			<Button Margin="5" HorizontalAlignment="Center" BorderThickness="3" CornerRadius="5">
+			<TextBox Margin="5" FontSize="18" Watermark="Название" Name="productName" Text="{Binding ProductName}"/>
+			<TextBox Margin="5" FontSize="18" Watermark="Цена" Name="productPrice" Text="{Binding ProductPrice}"/>
+			<Button HorizontalAlignment="Center" BorderThickness="3" CornerRadius="5" Click="Edit">
 				<TextBlock FontSize="18">
 					Изменить
 				</TextBlock>

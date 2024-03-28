@@ -94,9 +94,11 @@ namespace ShoppingCart
             {
                 if (id == product.ID)
                 {
-                    selectedProducts.RemoveAt(product.IDInCart);
+                    if (selectedProducts.Count > 0)
+                    {
+                        selectedProducts.RemoveAt(product.IDInCart);
+                    }
                     products.RemoveAt(product.ID);
-
                     break;
                 }
             }
@@ -105,6 +107,23 @@ namespace ShoppingCart
             {
                 product.ID = products.IndexOf(product);
             }
+        }
+        public void ProductEditing(object? sender, RoutedEventArgs args)
+        {
+            int id = (int)(sender as Button).Tag;
+            foreach (Products product in products)
+            {
+                if (id == product.ID)
+                {
+                    //selectedProducts.RemoveAt(product.IDInCart);
+                    //products.RemoveAt(product.ID);
+                    ProductEditWindow productEditWindow = new(product);
+                    productEditWindow.Show();
+                    Close();
+                    break;
+                }
+            }
+            allProducts.ItemsSource = products.ToList();
         }
     }
 }
