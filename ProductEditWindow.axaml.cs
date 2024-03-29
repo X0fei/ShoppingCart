@@ -11,8 +11,6 @@ public partial class ProductEditWindow : Window
     private List<Products> products = new();
     private List<Products> selectedProducts = new();
     public int ID { get; set; }
-    public string ProductName { get; set; }
-    public string ProductPrice { get; set; }
     public ProductEditWindow()
     {
         InitializeComponent();
@@ -22,10 +20,9 @@ public partial class ProductEditWindow : Window
         InitializeComponent();
         this.products = products;
         this.selectedProducts = selectedProducts;
-        ProductName = product.Name;
-        ProductPrice = product.Price;
-        productName.Text = ProductName;
-        productPrice.Text = ProductPrice;
+        ID = product.ID;
+        productName.Text = product.Name;
+        productPrice.Text = product.Price;
     }
     public void Edit(object source, RoutedEventArgs args)
     {
@@ -48,10 +45,27 @@ public partial class ProductEditWindow : Window
         }
         if (productName.Text != null && productName.Text != "" && productPrice.Text != null && productPrice.Text != "" && error == false)
         {
-            ProductPrice = productName.Text;
-            ProductPrice = productPrice.Text;
-            MainWindow mainWindow = new MainWindow();
+            foreach (Products product in products)
+            {
+                if (products.IndexOf(product) == ID)
+                {
+                    product.Name = productName.Text;
+                    product.Price = productPrice.Text;
+                    break;
+                }
+            }
+            foreach (Products product in selectedProducts)
+            {
+                if (selectedProducts.IndexOf(product) == ID)
+                {
+                    product.Name = productName.Text;
+                    product.Price = productPrice.Text;
+                    break;
+                }
+            }
+            MainWindow mainWindow = new MainWindow(products, selectedProducts);
             mainWindow.Show();
+            Close();
         }
     }
 }

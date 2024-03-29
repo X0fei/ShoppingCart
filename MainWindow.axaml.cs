@@ -17,7 +17,7 @@ namespace ShoppingCart
         {
             InitializeComponent();
             this.products = products;
-            allProducts.ItemsSource = this.products;
+            allProducts.ItemsSource = this.products.ToList();
             selectedProducts = productsInCart;
         }
         public void ProductAdd(object source, RoutedEventArgs args)
@@ -98,15 +98,15 @@ namespace ShoppingCart
                     {
                         selectedProducts.RemoveAt(product.IDInCart);
                     }
-                    products.RemoveAt(product.ID);
                     break;
                 }
             }
-            allProducts.ItemsSource = products.ToList();
+            products.RemoveAt(id);
             foreach (Products product in products)
             {
                 product.ID = products.IndexOf(product);
             }
+            allProducts.ItemsSource = products.ToList();
         }
         public void ProductEditing(object? sender, RoutedEventArgs args)
         {
@@ -117,7 +117,7 @@ namespace ShoppingCart
                 {
                     //selectedProducts.RemoveAt(product.IDInCart);
                     //products.RemoveAt(product.ID);
-                    ProductEditWindow productEditWindow = new(product);
+                    ProductEditWindow productEditWindow = new(product, products, selectedProducts);
                     productEditWindow.Show();
                     Close();
                     break;

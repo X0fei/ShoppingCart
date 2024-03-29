@@ -26,7 +26,7 @@ public partial class Cart : Window
         {
             product.IDInCart = productsInCart.IndexOf(product);
         }
-        shoppingCart.ItemsSource = productsInCart;
+        shoppingCart.ItemsSource = productsInCart.ToList();
         result.Text = $"Итого: {Sum()}";
     }
     public int Sum()
@@ -55,11 +55,11 @@ public partial class Cart : Window
                 break;
             }
         }
-        shoppingCart.ItemsSource = productsInCart.ToList();
         foreach (Products product in productsInCart)
         {
             product.IDInCart = productsInCart.IndexOf(product);
         }
+        shoppingCart.ItemsSource = productsInCart.ToList();
         result.Text = $"Итого: {Sum()}";
     }
     public void Increase(object? sender, RoutedEventArgs args)
