@@ -4,15 +4,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
         Width="600" Height="450"
-		MinWidth="600" MinHeight="450"
-		WindowStartupLocation="CenterScreen"
-		x:CompileBindings="False"
-		x:Class="ShoppingCart.Cart"
+  MinWidth="600" MinHeight="450"
+  WindowStartupLocation="CenterScreen"
+  x:CompileBindings="False"
+  x:Class="ShoppingCart.Cart"
         Title="Shopping Cart">
 
 	<DockPanel Margin="15">
 
-		<Border DockPanel.Dock="Right" BorderBrush="DimGray" BorderThickness="2" CornerRadius="5">
+		<Border DockPanel.Dock="Right" ClipToBounds="True" BorderBrush="DimGray" BorderThickness="2" CornerRadius="5">
 			<StackPanel>
 				<Border BorderBrush="DimGray" BorderThickness="0 0 0 2">
 					<TextBlock  Margin="8" HorizontalAlignment="Center" FontSize="18" FontWeight="Black">Корзина</TextBlock>
@@ -20,34 +20,40 @@
 				<Border BorderBrush="DimGray" BorderThickness="0 0 0 2">
 					<TextBlock  Margin="8" HorizontalAlignment="Center" FontSize="18" Name="result" Text="{Binding Sum}"/>
 				</Border>
-				<ListBox SelectionMode="Multiple,Toggle" Name="shoppingCart">
-					<ListBox.ItemTemplate>
-						<DataTemplate>
-							<StackPanel>
-								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding Name}"/>
-								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding Price}"/>
-								<StackPanel Margin="0 5" Orientation="Horizontal" HorizontalAlignment="Center">
-									<Button VerticalAlignment="Center" Width="28" Height="23" Tag="{Binding IDInCart}" Click="Decrease">
+
+				<ScrollViewer VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Auto" MaxWidth="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Window}}" MaxHeight="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Window}}">
+
+					<ListBox SelectionMode="Multiple,Toggle" Name="shoppingCart" MaxWidth="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=ScrollViewer}}" MaxHeight="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=ScrollViewer}}">
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+								<StackPanel>
+									<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding Name}"/>
+									<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding Price}"/>
+									<StackPanel Margin="0 5" Orientation="Horizontal" HorizontalAlignment="Center">
+										<Button VerticalAlignment="Center" Width="28" Height="23" Tag="{Binding IDInCart}" Click="Decrease">
+											<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">
+												-
+											</TextBlock>
+										</Button>
+										<TextBlock Margin="7 0 7 0" VerticalAlignment="Center" FontSize="12" FontWeight="Medium" Text="{Binding Count}"/>
+										<Button VerticalAlignment="Center" Width="28" Height="23" Tag="{Binding IDInCart}" Click="Increase">
+											<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">
+												+
+											</TextBlock>
+										</Button>
+									</StackPanel>
+									<Button HorizontalAlignment="Center" Tag="{Binding IDInCart}" Click="Delete">
 										<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">
-											-
-										</TextBlock>
-									</Button>
-									<TextBlock Margin="7 0 7 0" VerticalAlignment="Center" FontSize="12" FontWeight="Medium" Text="{Binding Count}"/>
-									<Button VerticalAlignment="Center" Width="28" Height="23" Tag="{Binding IDInCart}" Click="Increase">
-										<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">
-											+
+											Удалить
 										</TextBlock>
 									</Button>
 								</StackPanel>
-								<Button HorizontalAlignment="Center" Tag="{Binding IDInCart}" Click="Delete">
-									<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">
-										Удалить
-									</TextBlock>
-								</Button>
-							</StackPanel>
-						</DataTemplate>
-					</ListBox.ItemTemplate>
-				</ListBox>
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+
+				</ScrollViewer>
+
 			</StackPanel>
 		</Border>
 
@@ -62,5 +68,5 @@
 		</Border>
 
 	</DockPanel>
-	
+
 </Window>
