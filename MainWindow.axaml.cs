@@ -23,31 +23,38 @@ namespace ShoppingCart
         public void ProductAdd(object source, RoutedEventArgs args)
         {
             bool error = false;
-            for (int i = 0; i < productName.Text.Length; i++)
+            if (productName.Text == null || productPrice.Text == null || productName.Text == "" || productPrice.Text == "")
             {
-                if (productName.Text[i] == ' ')
+                error = true;
+            }
+            else
+            {
+                for (int i = 0; i < productName.Text.Length; i++)
                 {
-                    error = true;
-                    break;
+                    if (productName.Text[i] == ' ')
+                    {
+                        error = true;
+                        break;
+                    }
+                }
+                for (int i = 0; i < productPrice.Text.Length; i++)
+                {
+                    if (productPrice.Text[i] == ' ')
+                    {
+                        error = true;
+                        break;
+                    }
+                }
+                foreach (Products product in products)
+                {
+                    if (productName.Text == product.Name)
+                    {
+                        error = true;
+                        break;
+                    }
                 }
             }
-            for (int i = 0; i < productPrice.Text.Length; i++)
-            {
-                if (productPrice.Text[i] == ' ')
-                {
-                    error = true;
-                    break;
-                }
-            }
-            foreach (Products product in products)
-            {
-                if (productName.Text == product.Name)
-                {
-                    error = true;
-                    break;
-                }
-            }
-            if (productName.Text != null && productName.Text != "" && productPrice.Text != null && productPrice.Text != "" && error == false)
+            if (error == false)
             {
                 products.Add(new Products()
                 {
