@@ -7,18 +7,10 @@ namespace ShoppingCart
 {
     public partial class MainWindow : Window
     {   
-        private List<Products> products = new();
-        private List<Products> selectedProducts = new();
         public MainWindow()
         {
             InitializeComponent();
-        }
-        public MainWindow(List<Products> products, List<Products> productsInCart)
-        {
-            InitializeComponent();
-            this.products = products;
-            allProducts.ItemsSource = this.products.ToList();
-            selectedProducts = productsInCart;
+            allProducts.ItemsSource = Lists.Products.ToList();
         }
         public void ProductAdd(object source, RoutedEventArgs args)
         {
@@ -45,7 +37,7 @@ namespace ShoppingCart
                         break;
                     }
                 }
-                foreach (Products product in products)
+                foreach (Products product in Lists.Products)
                 {
                     if (productName.Text == product.Name)
                     {
@@ -56,19 +48,55 @@ namespace ShoppingCart
             }
             if (error == false)
             {
-                products.Add(new Products()
+                Lists.Products.Add(new Products()
                 {
-                    ID = products.Count,
+                    Id = Lists.Products.Count,
                     Name = productName.Text,
                     Price = productPrice.Text,
                     Count = 1
                 });
-                allProducts.ItemsSource = products.ToList();
+                allProducts.ItemsSource = Lists.Products.ToList();
                 productName.Text = null;
                 productPrice.Text = null;
             }
         }
-        public void ToSelectedProducts(object source, RoutedEventArgs args)
+        public void ProductEdit(object? sender, RoutedEventArgs args)
+        {
+            int id = (int)(sender as Button).Tag;
+            foreach (Products product in Lists.Products)
+            {
+                if (id == product.Id)
+                {
+                    ProductEditWindow productEditWindow = new(product);
+                    productEditWindow.Show();
+                    Close();
+                    break;
+                }
+            }
+            allProducts.ItemsSource = Lists.Products.ToList();
+        }
+        public void ProductDelete(object? sender, RoutedEventArgs args)
+        {
+            int id = (int)(sender as Button).Tag;
+            foreach (Products product in Lists.Products)
+            {
+                if (id == product.Id)
+                {
+                    if (Lists.ProductsInCart.Count > 0)
+                    {
+                        Lists.ProductsInCart.RemoveAt(product.IdInCart);
+                    }
+                    break;
+                }
+            }
+            Lists.Products.RemoveAt(id);
+            foreach (Products product in Lists.Products)
+            {
+                product.Id = Lists.Products.IndexOf(product);
+            }
+            allProducts.ItemsSource = Lists.Products.ToList();
+        }
+        public void ToCart(object source, RoutedEventArgs args)
         {
             if (allProducts.SelectedItems != null)
             {
@@ -76,9 +104,9 @@ namespace ShoppingCart
                 foreach (Products selectedProduct in allProducts.SelectedItems)
                 {
                     error = false;
-                    foreach (Products product in selectedProducts)
+                    foreach (Products product in Lists.ProductsInCart)
                     {
-                        if (selectedProduct.ID == product.ID)
+                        if (selectedProduct.Id == product.Id)
                         {
                             error = true;
                             break;
@@ -86,51 +114,13 @@ namespace ShoppingCart
                     }
                     if (error == false)
                     {
-                        selectedProducts.Add(selectedProduct);
+                        Lists.ProductsInCart.Add(selectedProduct);
                     }
                 }
-                Cart cart = new(products, selectedProducts);
+                Cart cart = new();
                 cart.Show();
                 Close();
             }
-        }
-        public void Delete(object? sender, RoutedEventArgs args)
-        {
-            int id = (int)(sender as Button).Tag;
-            foreach (Products product in products)
-            {
-                if (id == product.ID)
-                {
-                    if (selectedProducts.Count > 0)
-                    {
-                        selectedProducts.RemoveAt(product.IDInCart);
-                    }
-                    break;
-                }
-            }
-            products.RemoveAt(id);
-            foreach (Products product in products)
-            {
-                product.ID = products.IndexOf(product);
-            }
-            allProducts.ItemsSource = products.ToList();
-        }
-        public void ProductEditing(object? sender, RoutedEventArgs args)
-        {
-            int id = (int)(sender as Button).Tag;
-            foreach (Products product in products)
-            {
-                if (id == product.ID)
-                {
-                    //selectedProducts.RemoveAt(product.IDInCart);
-                    //products.RemoveAt(product.ID);
-                    ProductEditWindow productEditWindow = new(product, products, selectedProducts);
-                    productEditWindow.Show();
-                    Close();
-                    break;
-                }
-            }
-            allProducts.ItemsSource = products.ToList();
         }
     }
 }

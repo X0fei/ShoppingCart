@@ -27,19 +27,19 @@
 								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding Name}"/>
 								<TextBlock HorizontalAlignment="Center" FontSize="16" FontWeight="Medium" Text="{Binding Price}"/>
 								<StackPanel Margin="0 5" Orientation="Horizontal" HorizontalAlignment="Center">
-									<Button VerticalAlignment="Center" Width="28" Height="23" Tag="{Binding IDInCart}" Click="Decrease">
+									<Button VerticalAlignment="Center" Width="28" Height="23" Tag="{Binding IdInCart}" Click="Decrease">
 										<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">
 											-
 										</TextBlock>
 									</Button>
 									<TextBlock Margin="7 0 7 0" VerticalAlignment="Center" FontSize="12" FontWeight="Medium" Text="{Binding Count}"/>
-									<Button VerticalAlignment="Center" Width="28" Height="23" Tag="{Binding IDInCart}" Click="Increase">
+									<Button VerticalAlignment="Center" Width="28" Height="23" Tag="{Binding IdInCart}" Click="Increase">
 										<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">
 											+
 										</TextBlock>
 									</Button>
 								</StackPanel>
-								<Button HorizontalAlignment="Center" Tag="{Binding IDInCart}" Click="Delete">
+								<Button HorizontalAlignment="Center" Tag="{Binding IdInCart}" Click="Delete">
 									<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10">
 										Удалить
 									</TextBlock>

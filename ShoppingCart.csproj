@@ -24,4 +24,9 @@
       <DependentUpon>Cart.axaml</DependentUpon>
     </Compile>
   </ItemGroup>
+
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="ProductAddWindow.axaml" />
+  </ItemGroup>
 </Project>

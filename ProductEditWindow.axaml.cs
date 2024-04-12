@@ -8,19 +8,15 @@ namespace ShoppingCart;
 
 public partial class ProductEditWindow : Window
 {
-    private List<Products> products = new();
-    private List<Products> selectedProducts = new();
-    public int ID { get; set; }
+    public int Id { get; set; }
     public ProductEditWindow()
     {
         InitializeComponent();
     }
-    public ProductEditWindow(Products product, List<Products> products, List<Products> selectedProducts)
+    public ProductEditWindow(Products product)
     {
         InitializeComponent();
-        this.products = products;
-        this.selectedProducts = selectedProducts;
-        ID = product.ID;
+        Id = product.Id;
         productName.Text = product.Name;
         productPrice.Text = product.Price;
     }
@@ -45,25 +41,25 @@ public partial class ProductEditWindow : Window
         }
         if (productName.Text != null && productName.Text != "" && productPrice.Text != null && productPrice.Text != "" && error == false)
         {
-            foreach (Products product in products)
+            foreach (Products product in Lists.Products)
             {
-                if (products.IndexOf(product) == ID)
+                if (Lists.Products.IndexOf(product) == Id)
                 {
                     product.Name = productName.Text;
                     product.Price = productPrice.Text;
                     break;
                 }
             }
-            foreach (Products product in selectedProducts)
+            foreach (Products product in Lists.ProductsInCart)
             {
-                if (selectedProducts.IndexOf(product) == ID)
+                if (Lists.ProductsInCart.IndexOf(product) == Id)
                 {
                     product.Name = productName.Text;
                     product.Price = productPrice.Text;
                     break;
                 }
             }
-            MainWindow mainWindow = new MainWindow(products, selectedProducts);
+            MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();
         }
